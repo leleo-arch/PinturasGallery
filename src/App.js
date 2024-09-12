@@ -12,7 +12,7 @@ import { GlobalStyle, Container } from './styles';
 function App() {
   return (
     <Container className='App'>
-
+       
       <GlobalStyle />
       <Header />
       <AboutMe/>
