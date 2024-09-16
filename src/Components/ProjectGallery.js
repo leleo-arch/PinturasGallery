@@ -18,7 +18,7 @@ const fadeIn = keyframes`
 // Estilizando a galeria
 const GalleryWrapper = styled.section`
   padding: 60px 20px;
-  background-color: #1A1A1D; /* Cor mais escura para criar um clima artístico */
+  background-color: #1A1A1D;
 `;
 
 const GalleryTitle = styled.h2`
@@ -58,9 +58,11 @@ const Project = styled.div`
 `;
 
 const ProjectImage = styled(LazyLoadImage)`
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   margin: 20px auto;
+  border: solid 2px white;
+  margin-left: 60px;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
@@ -132,29 +134,60 @@ const ModalOverlay = styled.div`
 // Dados atualizados com ícones de fantasmas e quadros
 const projects = [
   {
-    title: 'Quadro: Fantasma no Nevoeiro',
-    description: 'Uma peça impressionista com detalhes abstratos de fantasmas emergindo de um nevoeiro.',
-    image: 'https://img.icons8.com/plasticine/100/000000/ghost.png',
-    link: '#'
-  },
-  {
-    title: 'Fantasma Sob a Lua',
-    description: 'Pintura com tema de fantasmas sob a luz de uma lua cheia, utilizando técnicas impressionistas.',
-    image: 'https://img.icons8.com/cotton/100/000000/ghost--v1.png',
+    title: 'Paisagem Fantasmagórica',
+    description: 'Uma paisagem fantasmagórica que mistura o surrealismo com elementos impressionistas.',
+    image: 'https://cdn.pixabay.com/photo/2015/03/30/11/01/paintings-698290_1280.jpg',
     link: '#'
   },
   {
     title: 'Paisagem Fantasmagórica',
     description: 'Uma paisagem fantasmagórica que mistura o surrealismo com elementos impressionistas.',
-    image: 'https://img.icons8.com/doodle/100/000000/ghost.png',
+    image: 'https://cdn.pixabay.com/photo/2014/10/29/19/15/graffiti-508272_1280.jpg',
     link: '#'
   },
   {
-    title: 'Arte Impressionista: O Espelho',
-    description: 'Reflexão artística de um mundo fantasmagórico através de técnicas de espelhamento.',
-    image: 'https://img.icons8.com/plasticine/100/000000/ghost.png',
+    title: 'Paisagem Fantasmagórica',
+    description: 'Uma paisagem fantasmagórica que mistura o surrealismo com elementos impressionistas.',
+    image: 'https://cdn.pixabay.com/photo/2015/07/12/18/42/pictures-842291_1280.jpg',
     link: '#'
   },
+  {
+    title: 'Paisagem Fantasmagórica',
+    description: 'Uma paisagem fantasmagórica que mistura o surrealismo com elementos impressionistas.',
+    image: 'https://cdn.pixabay.com/photo/2015/03/30/11/01/paintings-698290_1280.jpg',
+    link: '#'
+  },
+  {
+    title: 'Paisagem Fantasmagórica',
+    description: 'Uma paisagem fantasmagórica que mistura o surrealismo com elementos impressionistas.',
+    image: 'https://cdn.pixabay.com/photo/2015/03/30/11/01/paintings-698290_1280.jpg',
+    link: '#'
+  },
+  {
+    title: 'Paisagem Fantasmagórica',
+    description: 'Uma paisagem fantasmagórica que mistura o surrealismo com elementos impressionistas.',
+    image: 'https://cdn.pixabay.com/photo/2015/03/30/11/01/paintings-698290_1280.jpg',
+    link: '#'
+  },
+  {
+    title: 'Paisagem Fantasmagórica',
+    description: 'Uma paisagem fantasmagórica que mistura o surrealismo com elementos impressionistas.',
+    image: 'https://cdn.pixabay.com/photo/2015/07/12/19/26/pictures-842343_1280.jpg',
+    link: '#'
+  },
+  {
+    title: 'Paisagem Fantasmagórica',
+    description: 'Uma paisagem fantasmagórica que mistura o surrealismo com elementos impressionistas.',
+    image: 'https://cdn.pixabay.com/photo/2015/03/30/11/01/paintings-698290_1280.jpg',
+    link: '#'
+  },
+  {
+    title: 'Paisagem Fantasmagórica',
+    description: 'Uma paisagem fantasmagórica que mistura o surrealismo com elementos impressionistas.',
+    image: 'https://cdn.pixabay.com/photo/2015/03/30/11/01/paintings-698290_1280.jpg',
+    link: '#'
+  },
+
 ];
 
 const ProjectGallery = () => {
@@ -198,8 +231,8 @@ const ProjectGallery = () => {
             <ProjectContent>
               <ProjectTitle>{project.title}</ProjectTitle>
               <ProjectDescription>{project.description}</ProjectDescription>
-              <ProjectButton href={project.link} target="_blank" rel="noopener noreferrer">
-                Veja Mais
+              <ProjectButton href= 'https://wa.me/5511965531504' target="_blank" rel="noopener noreferrer">
+                Entrar em Contato 
               </ProjectButton>
             </ProjectContent>
           </Project>
@@ -212,9 +245,9 @@ const ProjectGallery = () => {
           <Modal isOpen={modalOpen}>
             <h2>{selectedProject.title}</h2>
             <p>{selectedProject.description}</p>
-            <ProjectImage src={selectedProject.image} alt={selectedProject.title} effect="blur" />
-            <ProjectButton href={selectedProject.link} target="_blank" rel="noopener noreferrer">
-              Veja mais
+            <ProjectImage src={selectedProject} alt={selectedProject.title} effect="blur" />
+            <ProjectButton href= 'https://wa.me/5511965531504' target="_blank" rel="noopener noreferrer">
+            Entre em Contato
             </ProjectButton>
             <button onClick={closeModal}>Fechar</button>
           </Modal>

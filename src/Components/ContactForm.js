@@ -49,7 +49,7 @@ const Contact = () => {
         Gostaria de saber mais sobre meus projetos ou discutir uma oportunidade? Sinta-se à vontade para me enviar uma mensagem!
       </ContactDescription>
        <ContactButton href="mailto:leo_deplay@outlook.com.com">Enviar E-mail</ContactButton>
-       <ContactButton href="https://wa.me/5511965531504?text=Ol%C3%A1!">Entrar em Contato</ContactButton>
+       <ContactButton href="https://wa.me/5511965531504">Entrar em Contato</ContactButton>
     
      
     </ContactSection>
