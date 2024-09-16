@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaPaintBrush, FaPalette, FaStore, FaUserAlt, FaEnvelope, FaImages } from 'react-icons/fa';
+import { FaStore, FaUserAlt, FaEnvelope, FaImages, FaInstagram, FaYoutube, FaPinterest, FaFacebook } from 'react-icons/fa';
 
 const HeaderWrapper = styled.header`
   text-align: center;
@@ -62,8 +62,42 @@ const IconWrapper = styled.span`
   margin-left: 8px;
 `;
 
+const SocialLinks = styled.div`
+  margin-top: 1px;
+  display: flex;
+  margin-left: 200px;
+  margin-bottom: 30px;
+  justify-content: center;
+`;
+
+const SocialLink = styled.a`
+  color: #ECF0F1;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #3498DB;
+  }
+`;
+
 const Header = () => (
   <HeaderWrapper>
+        <SocialLinks>
+      <SocialLink href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener noreferrer">
+        <FaInstagram />
+      </SocialLink>
+      <SocialLink href="https://www.youtube.com/seuchannel" target="_blank" rel="noopener noreferrer">
+        <FaYoutube />
+      </SocialLink>
+      <SocialLink href="https://www.pinterest.com/seuusuario" target="_blank" rel="noopener noreferrer">
+        <FaPinterest />
+      </SocialLink>
+      <SocialLink href="https://www.facebook.com/seuusuario" target="_blank" rel="noopener noreferrer">
+        <FaFacebook />
+      </SocialLink>
+    </SocialLinks>
+
     <Title>Galeria de Arte Leonardo</Title>
     <Subtitle>Pinturas e Quadros Únicos</Subtitle>
 
@@ -84,15 +118,9 @@ const Header = () => (
         Loja
         <IconWrapper><FaStore /></IconWrapper>
       </NavLink>
-      <NavLink href="#custom-orders">
-        Pedidos Personalizados
-        <IconWrapper><FaPaintBrush /></IconWrapper>
-      </NavLink>
-      <NavLink href="#events">
-        Exposições
-        <IconWrapper><FaPalette /></IconWrapper>
-      </NavLink>
     </Nav>
+
+
   </HeaderWrapper>
 );
 

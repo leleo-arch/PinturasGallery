@@ -59,10 +59,10 @@ const Project = styled.div`
 
 const ProjectImage = styled(LazyLoadImage)`
   width: 180px;
-  height: 180px;
+  height: 190px;
   margin: 20px auto;
   border: solid 2px white;
-  margin-left: 60px;
+  margin-left: 65px;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
