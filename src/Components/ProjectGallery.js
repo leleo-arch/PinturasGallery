@@ -71,7 +71,7 @@ const ProjectImage = styled(LazyLoadImage)`
 `;
 
 const ProjectContent = styled.div`
-  padding: 20px;
+  padding: 21px;
   text-align: start;
 `;
 
