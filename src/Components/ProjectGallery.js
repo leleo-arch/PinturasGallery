@@ -7,7 +7,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(39px);
   }
   to {
     opacity: 1;
