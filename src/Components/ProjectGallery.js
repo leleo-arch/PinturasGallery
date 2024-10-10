@@ -17,7 +17,7 @@ const fadeIn = keyframes`
 
 // Estilizando a galeria
 const GalleryWrapper = styled.section`
-  padding: 60px 20px;
+  padding: 61px 20px;
   background-color: #1A1A1D;
 `;
 
